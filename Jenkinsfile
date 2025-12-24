@@ -24,7 +24,7 @@ pipeline {
 
         stage('Docker Image Build') {
             steps {
-                // Замени 'my-name' на свою фамилию латиницей
+                
                 sh 'docker build -t my-app-image-my-name:${BUILD_NUMBER} .'
             }
         }
